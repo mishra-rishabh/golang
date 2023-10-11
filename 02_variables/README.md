@@ -21,3 +21,11 @@ Apart from the above types there are some advance types-
 * **Pointers**
 
 NOTE: In go almost everything is a **type**, functions, channels, mutex, etc, all are considered as types internally.
+
+### Declaring a variable
+* Variables are declared using `var` keyword.<br/>
+**example:** `var someNumber int = 123` <br/>
+* The value of an initialized variable with no assignment will be its default value.
+
+
+[Reference Link for Numeric Types](https://go.dev/ref/spec#Numeric_types)
