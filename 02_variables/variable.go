@@ -2,6 +2,12 @@ package main
 
 import "fmt"
 
+// someGlobalVar := "abcd"		// invalid, because := operator can only be used inside of functions
+var someGlobalVar = "abcd" // allowed
+
+// public variable
+var LastName string = "Mishra" // valid public variable
+
 func main() {
 	var myName string = "Rishabh"
 	fmt.Println(myName)
@@ -28,5 +34,25 @@ func main() {
 	fmt.Printf("defaultForInt: %v \n", defaultForInt)
 	fmt.Printf("defaultForString: %q \n", defaultForString)
 	fmt.Printf("defaultForBool: %v \n", defaultForBool)
-	fmt.Printf("defaultForFloat: %f \n", defaultForFloat)
+	fmt.Printf("defaultForFloat: %f \n\n", defaultForFloat)
+
+	// implicit type
+	var slogan = "Inquilab Zindabad!"
+	fmt.Println(slogan)
+
+	// no var style
+	age := 27
+	fmt.Println(age)
+
+	fmt.Printf("\n")
+
+	fmt.Println(someGlobalVar)
+
+	// const Pi = 3.14159 // valid
+	const Pi float64 = 3.14159 // also valid
+	fmt.Println(Pi)
+
+	fmt.Printf("\n")
+
+	fmt.Printf("Public variable %q", LastName)
 }

@@ -20,12 +20,42 @@ Apart from the above types there are some advance types-
 * **Structs**
 * **Pointers**
 
-NOTE: In go almost everything is a **type**, functions, channels, mutex, etc, all are considered as types internally.
+NOTE: In Go almost everything is a **type**, functions, channels, mutex, etc, all are considered as types internally.
 
-### Declaring a variable
+### Declaring a Variable
 * Variables are declared using `var` keyword.<br/>
 **example:** `var someNumber int = 123` <br/>
 * The value of an initialized variable with no assignment will be its default value.
 
+### Declaring a Variable (Other Way)
+#### 1. Implicit Type:
+* When variable is declared but type is not mentioned then **implicit type** comes into picture.
+* It means, Go will automatically decide the type of the variable based on the value.<br/>
+**example:** `var myName = "Rishabh Mishra"` here, Go will decide the type of `myName` variable based on the value it holds, i.e., it will treat this variable as string type.
+
+#### 2. No `var` Style (Walrus Operator):
+* We can totally ignore the keyword `var` and still can declare the variables.
+* We can make use of the **Walrus Operator (`:=`)** to do the same.<br/>
+**example:** `totalAmount := 60000`
+* The walrus operator can only be used inside of functions, and the variable must be assigned a value immediately. It cannot be used to declare global variables, and it cannot be used to declare multiple variables in a single statement.
+
+### Public and Private Variables
+* In Go, variables are considered public if they start with an uppercase letter. Variables that start with a lowercase letter are considered private.
+* This means that public variables can be accessed from anywhere in the program, while private variables can only be accessed from within the package in which they are declared.<br/>
+**example:**
+    ```
+    var Name string = "Rishabh"   // this is a valid public variable
+    var name string = "Rishabh"   // this is an invalid public variable because it is a private variable
+    ```
+
+### Constants
+* Constants in Go are immutable values that cannot be changed once they are declared. They can be of any type, including numeric types, strings, and booleans.
+* To declare a constant, we use the `const` keyword followed by the name of the constant and its value.<br/>
+**example:**
+    ```
+    const Pi = 3.14159
+    const Name = "Rishabh"
+    const Active = true
+    ```
 
 [Reference Link for Numeric Types](https://go.dev/ref/spec#Numeric_types)
