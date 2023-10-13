@@ -3,4 +3,5 @@ go 1.21.1
 use (
 	./01_first_program
 	./02_variables
+	./03_user_input
 )
