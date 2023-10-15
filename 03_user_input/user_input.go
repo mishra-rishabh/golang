@@ -18,7 +18,7 @@ func main() {
 	fmt.Println("Enter you name:")
 
 	// comma ok syntax => we will look it in next chapter
-	input, _ := reader.ReadString('\n')
+	input, _ := reader.ReadString('\n') // read till new line is found
 
 	var age uint
 
