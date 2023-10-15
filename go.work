@@ -4,4 +4,5 @@ use (
 	./01_first_program
 	./02_variables
 	./03_user_input
+	./05_type_conversion
 )
