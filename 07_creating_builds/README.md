@@ -13,5 +13,5 @@ To create a build based on the OS, go the project directory and type below comma
 GOOS=windows go build
 ```
 
-**NOTE:** Use GOOS=<os_name> if you are making a build for another OS from the other one.<br/>
+**NOTE:** Use `GOOS=<os_name>` if you are making a build for another OS from the other one.<br/>
 **example:** If you are using ***windows*** but want to take a build for mac OS then use `GOOS=darwin go build` and the same goes for other OS also.
