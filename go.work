@@ -5,4 +5,5 @@ use (
 	./02_variables
 	./03_user_input
 	./05_type_conversion
+	./06_time_package
 )
