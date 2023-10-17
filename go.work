@@ -7,4 +7,5 @@ use (
 	./05_type_conversion
 	./06_time_package
 	./08_pointers
+	./09_arrays
 )
