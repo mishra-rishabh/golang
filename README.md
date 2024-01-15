@@ -34,3 +34,16 @@ Golang (or Go) is a statically typed, compiled programming language designed at 
 * **Simpler syntax:** Go's syntax is much simpler than the syntax of many other object-oriented languages, such as Java and C++. This makes Go easier to learn and use.
 * **Faster performance:** Go programs can often run faster than programs written in other object-oriented languages. This is because Go does not have the overhead of classes and inheritance.
 * **More flexibility:** Go's approach to modularity and reusability is more flexible than the traditional object-oriented approach. This allows Go programmers to write code that is better suited to the specific needs of their application.
+
+## What’s Possible With Go?
+* **Cloud & Network Services:** With a strong ecosystem of tools and APIs on major cloud providers, it is easier than ever to build services with Go.
+* **Command-line Interfaces:** With popular open source packages and a robust standard library, use Go to create fast and elegant CLIs.
+* **Web Development:** With enhanced memory performance and support for several IDEs, Go powers fast and scalable web applications.
+* **DevOps & Site Reliability Engineering (SRE):** With fast build times, lean syntax, an automatic formatter and doc generator, Go is built to support both DevOps and SRE.
+
+## Download & Install Go
+https://go.dev/dl/
+
+## Check If Go Is Installed
+`go version`
+
