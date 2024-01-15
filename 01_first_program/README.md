@@ -1,9 +1,3 @@
-first download and install go from the official website.<br/>
-check if go is installed or not by running the below command in terminal-
-```
-go version
-```
-
 once installed go to the folder where you want to save your file and run the below command-
 ```
 go mod init <your_module_name>
