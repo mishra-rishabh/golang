@@ -2,10 +2,5 @@ go 1.21.1
 
 use (
 	./01_first_program
-	./02_variables
-	./03_user_input
-	./05_type_conversion
-	./06_time_package
-	./08_pointers
-	./09_arrays
+	./04_variables_types_and_constants
 )
