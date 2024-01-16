@@ -15,5 +15,5 @@ The GOPATH environment variable lists places to look for Go code.
 
     **NOTE:** The above command is case-sensitive. `go env gopath` won't work. It should be in uppercase.
 
-* If the environment variable is unset, GOPATH defaults to a subdirectory named **go** in the user's home directory ($HOME/go on Unix, %USERPROFILE%\go on Windows), unless that directory holds a Go distribution.
+* If the environment variable is unset, GOPATH defaults to a subdirectory named **go** in the user's home directory **($HOME/go on Unix, %USERPROFILE%\go on Windows)**, unless that directory holds a Go distribution.
 * Run `go env GOPATH` to see the current GOPATH.
