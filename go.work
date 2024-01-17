@@ -3,4 +3,10 @@ go 1.21.1
 use (
 	./01_first_program
 	./04_variables_types_and_constants
+	./05_user_input
+	./06_comma_ok_syntax
+	./07_type_conversion
+	./08_time_package
+	./11_pointers
+	./12_arrays
 )
