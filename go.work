@@ -9,4 +9,5 @@ use (
 	./08_time_package
 	./11_pointers
 	./12_arrays
+	./13_slices
 )
