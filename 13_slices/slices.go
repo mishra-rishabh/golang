@@ -84,6 +84,16 @@ func main() {
 	fmt.Printf("For copyScores slice after copying => length: %d, capacity: %d, slice: %v \n\n", len(copyScores), cap(copyScores), copyScores)
 
 	/*
+		Removing a value from a slice based on index
+	*/
+	var codingLangs = []string{"go", "rust", "javascript", "solidity", "c++"}
+	fmt.Println("Coding languages:", codingLangs)
+
+	// let's remove javascript from the above slice
+	codingLangs = append(codingLangs[:2], codingLangs[3:]...)
+	fmt.Println("Coding languages after removing an element:", codingLangs)
+
+	/*
 		Comment and Uncomment the statements to check the outputs
 	*/
 }

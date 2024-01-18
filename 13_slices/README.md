@@ -121,3 +121,26 @@ var someSlice []int // slice with no length and capacity
 	copy(copyScores, scores) // copying from scores to copyScores
     ```
 
+
+## Removing A Value From A Slice
+
+We can also use `append()` function to remove an element from a slice.
+
+**example:**
+
+```go
+var codingLangs = []string{"go", "rust", "javascript", "solidity", "c++"}
+/*
+    We know that append actually reallocates the memory accordingly.
+    So, if we want to remove 'javascript' (index 2) from the above slice,
+    then we have to append the elements from 'go' (index 0) to 'rust' (index 1)
+    and from 'solidity' (index 3) till end of the slice
+
+    NOTE: Remember that, in append() the upper-bound is always excluded
+*/
+
+codingLangs = append(codingLangs[:2], codingLangs[3:]...)
+/*
+    O/P: Coding languages after removing an element: [go rust solidity c++]
+*/
+```
