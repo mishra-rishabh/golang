@@ -55,6 +55,8 @@ fmt.Println("numbers[4:] ==", numbers[4:])
     * The `cap()` function tells you the capacity of the underlying array.
     * In other words, capacity is total no elements in underlying array, when you append more elements the length increases till capacity. After that any further append to slice causes the capacity to increase automatically(apprx double) and length by no of elements appended.
 
+    **NOTE:** By default a new slice’s capacity is equal to its length.
+
 **example:**
 ```go
 // slice of length 3 and capacity 4
