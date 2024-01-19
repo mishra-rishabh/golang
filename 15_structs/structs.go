@@ -29,5 +29,5 @@ func main() {
 	newVoter3.isEligibleToVote = true
 
 	// accessing specific value
-	fmt.Printf("Voter Name: %+v\n", newVoter3.Name)
+	fmt.Printf("Voter Name: %v\n", newVoter3.Name)
 }

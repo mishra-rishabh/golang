@@ -23,12 +23,6 @@
     member definition;
     }
     ```
-* Once a structure type is defined, it can be used to declare variables of that type using the following syntax.
-    
-    **Syntax:**
-    ```
-    variable_name := structure_variable_type {value1, value2...valueN}
-    ```
 
     **example:**
     ```go
@@ -37,8 +31,21 @@
         Age              uint
         isEligibleToVote bool
     }
+    ```
 
-    /* inserting values in struct */
+
+## Inserting Values To Struct
+
+* Once a structure type is defined, it can be used to declare variables of that type.
+    
+    **Syntax:**
+    ```
+    variable_name := structure_variable_type {value1, value2...valueN}
+    ```
+
+    **example:**
+    ```go
+    /* inserting values */
 	newVoter1 := Voters{Name: "Jack", Age: 19, isEligibleToVote: true}
 
     // or
@@ -51,6 +58,20 @@
 	newVoter.Name = "Robert"
 	newVoter.Age = 20
 	newVoter.isEligibleToVote = true
+    ```
+
+
+## Accessing Struct Values
+* To access values from a struct we can use the below way-
+
+    **Syntax:**
+    ```
+    struct_variable.member
+    ```
+    
+    **example:**
+    ```go
+    fmt.Printf("Voter Name: %v\n", newVoter3.Name)
     ```
 
 **NOTE:** Structs are mutable.
