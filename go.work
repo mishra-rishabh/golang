@@ -10,4 +10,15 @@ use (
 	./11_pointers
 	./12_arrays
 	./13_slices
+	./14_maps
+	./15_structs
+	./16_if_else_switch_select
+	./17_loops
+	./18_functions
+	./19_methods
+	./20_closures
+	./21_defer
+	./22_working_with_files
+	./23_handling_web_requests
+	./24_handling_urls
 )
